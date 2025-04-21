@@ -1,0 +1,41 @@
+package com.demo.JWT_TokenGenerator;
+
+
+import java.util.Date;
+
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+
+public class JwtUtil {
+    private static final String SECRET_KEY = "secret123";
+
+    public static String generateToken(String username, String role) {
+        return Jwts.builder()
+                .setSubject(username)
+                .claim("role", role)
+                .setIssuedAt(new Date())
+                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 5)) 
+                .signWith(SignatureAlgorithm.HS256, SECRET_KEY)
+                .compact();
+    }
+
+    public static boolean validateToken(String token, String requiredRole) {
+        try {
+            Claims claims = Jwts.parser().setSigningKey(SECRET_KEY)
+                    .parseClaimsJws(token).getBody();
+
+            String role = claims.get("role", String.class);
+            return role.equals(requiredRole);
+        } catch (Exception e) {
+            System.out.println("Token invalid or expired.");
+            return false;
+        }
+    }
+
+    public static void printClaims(String token) {
+        Claims claims = Jwts.parser().setSigningKey(SECRET_KEY)
+                .parseClaimsJws(token).getBody();
+        System.out.println("User: " + claims.getSubject());
+        System.out.println("Role: " + claims.get("role"));
+    }
+}

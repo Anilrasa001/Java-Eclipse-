@@ -1,0 +1,33 @@
+package com.demo.JWT_TokenGenerator;
+import java.util.Scanner;
+
+public class App {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        System.out.print("Enter username: ");
+        String username = sc.nextLine();
+
+        System.out.print("Enter role (customer/admin): ");
+        String role = sc.nextLine();
+
+       
+        String token = JwtUtil.generateToken(username, role);
+        System.out.println("\nJWT Token Generated:");
+        System.out.println(token);
+
+      
+        System.out.println("\nValidating token for Customer Dashboard...");
+        boolean isValid = JwtUtil.validateToken(token, "customer");
+
+        if (isValid) {
+            System.out.println("Access Granted to Customer Dashboard!");
+            JwtUtil.printClaims(token);
+        } else {
+            System.out.println("Access Denied. Invalid Role or Expired Token.");
+        }
+
+        sc.close();
+    }
+}

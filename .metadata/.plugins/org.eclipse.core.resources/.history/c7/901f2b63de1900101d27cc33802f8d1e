@@ -1,0 +1,31 @@
+package selenium.AutomateWebTest;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class BrowserTestSetup {
+    public static void main(String[] args) throws InterruptedException {
+        // Set up ChromeDriver using WebDriverManager
+        WebDriverManager.chromedriver().setup();
+
+        // Create an instance of ChromeDriver
+        WebDriver driver = new ChromeDriver();
+
+        // Navigate to Google
+//        driver.get("https://google.com");
+//        Thread.sleep(5000);
+//        driver.navigate().to("https://www.nasa.gov/");
+//        driver.navigate().back();
+//        driver.navigate().forward();
+//        driver.navigate().to("http://localhost:5173/");
+//        driver.navigate().refresh();
+        WebDriver driver1=new ChromeDriver();
+		driver1.get("http://localhost:5173/");
+		WebElement element=driver1.findElement(By.name("firstname"));
+		element.sendKeys("Manoj",Keys.ENTER);
+		element.click();
+        
+    }
+}

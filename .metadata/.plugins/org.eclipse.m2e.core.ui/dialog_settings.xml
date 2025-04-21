@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Admin\Desktop\Spring\Jenkins_tesing2\pom.xml"/>
+			<item value="C:\Users\Admin\Desktop\Spring\jenkins_day2\src\main\java\com\tesing\jenkins_day2\App.java"/>
+			<item value="C:\Users\Admin\Downloads\assignments\assignments\SelenuimAssignment\test-output\index.html"/>
+			<item value="C:\Users\Admin\Desktop\Spring\AutomateWebTest\src\main\java\selenium\AutomateWebTest\TestNgAnnotation.java"/>
+			<item value="C:\Users\Admin\Desktop\Spring\AutomateWebTest\src\main\java\selenium\AutomateWebTest"/>
+			<item value="C:\Users\Admin\Desktop\Spring\Designpatten\src\com\patterns\ObserverPattern.java"/>
+			<item value="C:\Users\Admin\Desktop\Spring\BookManagementSystem"/>
+			<item value="C:\Users\Admin\Desktop\Spring\BookManagementSystem\src\com\model\Book\Book.java"/>
+			<item value="C:\Users\Admin\Desktop\Spring\jdbc2\src\com\connection\DBconnection.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.tesing.jenkin_practice"/>
+			<item value="com.tesing.Jenkins_tesing2"/>
+			<item value="com.tesing.jenkins_day2"/>
+			<item value="com.tesing.AutomationTesting"/>
+			<item value="com.tesing.Test"/>
+		</list>
+		<list key="groupId">
+			<item value="com.tesing"/>
+		</list>
+		<list key="artifactId">
+			<item value="jenkin_practice"/>
+			<item value="Jenkins_tesing2"/>
+			<item value="jenkins_day2"/>
+			<item value="AutomationTesting"/>
+			<item value="Test"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="838"/>
+		<item key="x" value="720"/>
+		<item key="y" value="0"/>
+	</section>
+</section>

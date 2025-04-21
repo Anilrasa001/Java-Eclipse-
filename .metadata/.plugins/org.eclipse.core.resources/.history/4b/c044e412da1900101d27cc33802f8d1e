@@ -1,0 +1,10 @@
+package selenium.AutomateWebTest;
+
+public class BrowserTestSetup {
+	public static void main( String[] args {
+	System.setProperty("webdriver.chrome.driver","./setupdriver/chromedriver.exe");
+	WebDriverManager.chromedriver().setup();
+	driver.get("https://gooogle.com");	
+	}
+}
+		

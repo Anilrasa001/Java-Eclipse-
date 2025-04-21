@@ -1,0 +1,21 @@
+package com.tesing.AutomationTesting;
+
+public class FixedDepositAutomation {
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver","path/to/chromedriver");
+        WebDriver driver = new ChromeDriver();
+
+        driver.get("https://www.orangehrm.com/"); // Replace with actual URL
+
+        driver.findElement(By.id("depositAmount")).sendKeys("50000");
+        driver.findElement(By.id("tenure")).sendKeys("12");
+        driver.findElement(By.id("rate")).sendKeys("6.5");
+
+        driver.findElement(By.id("submitBtn")).click();
+
+        WebElement result = driver.findElement(By.id("maturityAmount"));
+        System.out.println("Maturity Amount: " + result.getText());
+
+        driver.quit();
+    }
+}

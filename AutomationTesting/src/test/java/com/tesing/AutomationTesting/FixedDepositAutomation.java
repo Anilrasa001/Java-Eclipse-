@@ -1,0 +1,28 @@
+package com.tesing.AutomationTesting;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FixedDepositAutomation {
+    public static void main(String[] args) {
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver"); // Or use WebDriverManager
+        WebDriver driver = new ChromeDriver();
+
+        try {
+            driver.get("https://your-fd-form-url.com"); // Replace with actual FD form URL
+
+            driver.findElement(By.id("depositAmount")).sendKeys("50000");
+            driver.findElement(By.id("tenure")).sendKeys("12");
+            driver.findElement(By.id("rate")).sendKeys("6.5");
+
+            driver.findElement(By.id("submitBtn")).click();
+
+            WebElement result = driver.findElement(By.id("maturityAmount"));
+            System.out.println("Maturity Amount: " + result.getText());
+        } finally {
+            driver.quit();
+        }
+    }
+}

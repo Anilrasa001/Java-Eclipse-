@@ -1,0 +1,9 @@
+package com.tesing.AutomationTesting;
+
+import org.testng.annotations.Test;
+
+public class FixedDepositAutomation {
+  @Test
+  public void f() {
+  }
+}

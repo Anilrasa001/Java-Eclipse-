@@ -1,0 +1,9 @@
+package com.tesing.AutomationTesting;
+
+
+
+public class FixedDepositAutomation {
+  @Test
+  public void f() {
+  }
+}
